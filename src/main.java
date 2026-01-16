@@ -58,7 +58,7 @@ public class main {
 
             clearScreen();
             //check the balance, if 0 asks to put more credit
-            if(balance == 0){
+            if(balance == 0 && playing){
                 System.out.println("Your balance is zero, would you like to add more credit? (Y/N)");
                 boolean answer = scanner.nextLine().trim().toUpperCase().contains("Y");
                 System.out.println();
